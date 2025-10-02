@@ -67,27 +67,50 @@ button:focus-visible {
   }
 } */
 
-.single-card-container {
-  width: 300px;
-  height: 500px;
+/*************************************************
+    GENERAL RULES CSS
+ *************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.cards-container {
+  width: 100%;
+  background-color: #e6ecf1;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 0;
+}
+
+.single-card {
+  width: 300px;
+  height: 700px;
+  min-height: 500px;
+  display: flex;
+  justify-content: flex-end;
   flex-direction: column;
   background-size: cover;
   background-position: center;
   color: white;
   padding: 20px;
-  justify-content: flex-end;
-}
-
-.text-container {
-  width: 100%;
-}
-.name-and-bio-container {
-  width: 100%;
+  border-radius: 20px;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.5), -1px -1px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 h1 {
-  margin: 0;
+  height: 400px;
+  margin: 20px 0;
 }
 
 .line {
@@ -95,9 +118,12 @@ h1 {
   background-color: white;
   height: 1px;
   margin-bottom: 8px;
+  margin: 20px 0;
 }
 .info-container {
   width: 100%;
+  height: 110px;
+  justify-content: flex-end;
 }
 
 ul {
