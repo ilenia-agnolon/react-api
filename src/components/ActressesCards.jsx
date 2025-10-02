@@ -40,15 +40,24 @@ export default function ActressesCards() {
               <ul>
                 <li>
                   {/* anno nascita */}
-                  <span>Anno di nascita: {actress.birth_year}</span>
+                  <span>
+                    <strong>Year of birth: </strong>
+                    {actress.birth_year}
+                  </span>
                 </li>
                 <li>
                   {/* nazionalità */}
-                  <span>Nazionalità: {actress.nationality}</span>
+                  <span>
+                    <strong>Nationality: </strong>
+                    {actress.nationality}
+                  </span>
                 </li>
                 <li>
                   {/* awards */}
-                  <span>Riconoscimenti: {actress.awards}</span>
+                  <span>
+                    <strong>Awards: </strong>
+                    {actress.awards}
+                  </span>
                 </li>
               </ul>
             </div>
